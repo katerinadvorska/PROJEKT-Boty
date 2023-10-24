@@ -1,9 +1,17 @@
 /* intuitivnejsi box-sizing */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 body {
-    text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  font-family: "Rubik", sans-serif;
+  font-size: 14px;
 }
 
 /*
@@ -21,3 +29,111 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+.kontejner {
+  display: flex;
+  width: 670px;
+  height: 440px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 8px rgb(45, 45, 45);
+}
+
+.leva {
+  background-image: linear-gradient(#06d7c1, #50cc49);
+  color: white;
+  width: 50%;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 30px;
+  border-radius: 20px 0 0 20px;
+}
+
+.prava {
+  position: relative;
+  width: 50%;
+  padding: 30px;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin-top: 30px;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.bota {
+  position: absolute;
+  left: -100px;
+  bottom: 5px;
+}
+.cena {
+  position: absolute;
+  right: 370px;
+  bottom: 50px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.zaruka {
+  position: absolute;
+  right: 370px;
+  bottom: 30px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.bezecka {
+  font-size: 14px;
+  color: rgb(133, 133, 133);
+  font-weight: 400;
+}
+
+.zoom {
+  border-bottom: 1px solid #06d7c1;
+  padding-bottom: 30px;
+}
+
+.button {
+  padding: 10px 20px;
+  color: white;
+  background-color: #f15f42;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+  padding-bottom: 80px;
+  padding-left: 0;
+}
+
+.item {
+  border-radius: 50%;
+  border: 1px solid #f15f42;
+  color: #f15f42;
+}
+
+li {
+  padding: 5px;
+  margin: 0 5px;
+}
